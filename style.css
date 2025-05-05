@@ -1,6 +1,5 @@
 body,
 html {
-  background-color: aqua;
   height: 100%;
   margin: 0;
 }
@@ -50,5 +49,71 @@ padding: 15px 0px;
   box-sizing: border-box;
   grid-column: 2/3;
   display: grid;
-  grid-template-rows: 350px 1fr;
+  grid-template-rows: 1fr 5fr;
 }
+
+.header-container{
+  box-sizing: border-box;
+  padding-top: 15px;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 3fr 1fr;
+  gap: 30px;
+}
+
+.icon-img, .pfp-img{
+height: 5vh;
+width: 5vh;
+background-color: gray;
+border-radius: 50%;
+border: black solid 2px;
+}
+
+.top-bar-left, .top-bar-right{
+  display: flex;
+justify-content: start;
+align-items: center;
+gap: 15px;
+}
+.top-bar-left{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: flex;
+}
+.top-bar-left input{
+  flex-grow: 1;
+}
+
+.top-bar-right{
+grid-column: 2/3;
+grid-row: 1/2;
+display: flex;
+justify-content: center;
+gap: 30px;
+}
+
+.main-bar{
+  display: flex;
+  flex-direction: row;
+}
+.user-salute{
+  grid-row: 2/3;
+  grid-column: 1/2;
+  display: flex;
+  gap: 15px;
+}
+.user-salute img{
+  height: 8vh;
+  width: 8vh;
+}
+.user-actions{
+  grid-row: 2/3;
+  grid-column: 2/3;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+}
+
+
+
